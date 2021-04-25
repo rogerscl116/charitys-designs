@@ -16,7 +16,7 @@ header {
     color: rgb(245, 166, 102);
     font-size: 20px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     flex-wrap: wrap;
 }
 
@@ -44,6 +44,11 @@ header nav ul {
 header nav ul li {
     display: inline-block;
     margin-left: 20px;
+}
+
+a {
+    color: whitesmoke;
+    font-style: normal;
 }
 
 .main-content {
