@@ -9,6 +9,7 @@ body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+/* header styles */
 header {
     background-color:rgb(34, 34, 34);
     color: #f8dbdb;
@@ -47,6 +48,7 @@ header nav ul li a {
     padding: 10px 15px;
 }
 
+/* hero styles */
 .hero {
     height: 300px;
     width: 100%;
@@ -77,14 +79,14 @@ header nav ul li a {
     border-radius: 5px;
     align-self: flex-end;
 }
-
+/* main element styles */
 .content { 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #250202;
-    background-color: #f8dbdb;
+    background-color: #f7bcbc;
     margin: 40px;
     padding: 20px;
-    opacity: 0.5;
+    border-radius: 5px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -95,19 +97,57 @@ main section h2 {
     font-size: 30px;
     margin: 20px;
     padding: 20px;
-    border-right: solid;
-    float: left;
     align-items: flex-start;
 }
 
 .about-me, .work, .contact-me {
-    margin: 20px;
     padding: 20px;
     display: flex;
-    justify-content: space-between;
+    align-items: center;
 }
 
 main section p {
     margin: 40px;
     padding: 20px;
 }
+
+.run-buddy {
+    background-image: url("./images/run-buddy.jpg");
+    background-size: cover;
+    background-position: right;
+    margin: 40px;
+    height: 600px;
+    width: 600px;
+    border: solid rgb(34, 34, 34);
+}
+
+.horiseon {
+    background-image: url("./images/horiseon.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 40px;
+    height: 300px;
+    width: 300px;
+    border: solid rgb(34, 34, 34);
+}
+
+.wip {
+    background-image: url("./images/placeholder.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 40px;
+    height: 300px;
+    width: 300px;
+    border: solid rgb(34, 34, 34);
+}
+
+.work-content, h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(34, 34, 34);
+    color: #f8dbdb;
+}
+
+.work-content {
+    border-radius: 5px;
+}
+
