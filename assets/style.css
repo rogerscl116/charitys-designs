@@ -17,13 +17,13 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    position: -webkit-sticky;
     position: sticky;
+    z-index: 9999;
 }
 
 header h1 {
     font-weight: bold;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 header nav {
@@ -40,14 +40,15 @@ header nav ul li {
 }
 
 header nav ul li a {
-    padding: 10px 15px;
     color: #f8dbdb;
+    font-size: 20px;
     font-weight: lighter;
     text-decoration: none;
+    padding: 10px 15px;
 }
 
 .hero {
-    height: 400px;
+    height: 300px;
     width: 100%;
     background-image: url("./images/red-snake-skin.jpg");
     background-size: cover;
@@ -59,8 +60,8 @@ header nav ul li a {
 }
 
 .hero img {
-    height: 300px;
-    width: 300px;
+    height: 250px;
+    width: 250px;
     margin: 40px;
     padding: 20px;
     border-radius: 50%;
@@ -70,6 +71,7 @@ header nav ul li a {
 .hero h2 {
     background-color:rgb(34, 34, 34);
     color: #f8dbdb;
+    font-size: 40px;
     margin: 40px;
     padding: 20px;
     border-radius: 5px;
@@ -80,15 +82,32 @@ header nav ul li a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #250202;
     background-color: #f8dbdb;
-    opacity: 0.75;
+    margin: 40px;
     padding: 20px;
+    opacity: 0.5;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
 }
 
-main h2 {
+main section h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
-    flex: 1;
+    font-size: 30px;
+    margin: 20px;
+    padding: 20px;
+    border-right: solid;
+    float: left;
+    align-items: flex-start;
+}
+
+.about-me, .work, .contact-me {
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main section p {
+    margin: 40px;
+    padding: 20px;
 }
