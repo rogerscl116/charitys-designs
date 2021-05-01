@@ -5,14 +5,12 @@
 }
 
 body {
-    background-color: #5a0404;
-    font-family: 'Courier New', Courier, monospace;
+    background-color: #4e0404;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header {
-    background-image: url("./images/red-snake-skin.jpg");
-    background-size: cover;
-    background-position: center;
+    background-color:rgb(34, 34, 34);
     color: #f8dbdb;
     padding: 20px;
     display: flex;
@@ -23,19 +21,9 @@ header {
     position: sticky;
 }
 
-header img {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-}
-
 header h1 {
     font-weight: bold;
     font-size: 40px;
-}
-
-.header-imgname {
-    float: left;
 }
 
 header nav {
@@ -55,15 +43,52 @@ header nav ul li a {
     padding: 10px 15px;
     color: #f8dbdb;
     font-weight: lighter;
+    text-decoration: none;
+}
+
+.hero {
+    height: 400px;
+    width: 100%;
+    background-image: url("./images/red-snake-skin.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.hero img {
+    height: 300px;
+    width: 300px;
+    margin: 40px;
+    padding: 20px;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.hero h2 {
+    background-color:rgb(34, 34, 34);
+    color: #f8dbdb;
+    margin: 40px;
+    padding: 20px;
+    border-radius: 5px;
+    align-self: flex-end;
 }
 
 .content { 
-    color: #5a0404;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #250202;
     background-color: #f8dbdb;
     opacity: 0.75;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 main h2 {
-    float: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    flex: 1;
 }
