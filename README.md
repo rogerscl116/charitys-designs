@@ -12,9 +12,9 @@ Create a website including my name, recent photo and links to sections about me,
 ## Screenshots
 
 ### Header/Hero Element
-![Charity's Designs Header/Hero Element](./assets/screenshots/header-hero.png)
+![Charity's Designs Header/Hero Element](./assets/screenshots/header-hero.jpg)
 ### Main Element
-![Charity's Designs Main Element](./assets/screenshots/main.png)
+![Charity's Designs Main Element](./assets/screenshots/main.jpg)
 
 
 
