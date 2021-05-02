@@ -110,6 +110,10 @@ main section p {
     padding: 20px;
 }
 
+h2 {
+    text-decoration: none;
+}
+
 .work {
     display: flex;
     flex-wrap: wrap;
@@ -151,16 +155,21 @@ main section p {
 
 h3, .work-content {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: rgb(34, 34, 34);
     color: #f8dbdb;
-}
-
-.work-content {
+    margin: 20px;
+    padding: 10px;
     border-radius: 5px;
     font-style: normal;
 }
 
-/* media screens for 1024px, 768px, and 425px */
+h3 {
+    background-color:rgb(34, 34, 34);
+}
+
+.work.content {
+    text-align: end;
+}
+/* media screens for 1024px, 768px, 425px, and 320px */
 @media screen and (max-width: 1024px) {
    
     header {
@@ -196,12 +205,76 @@ h3, .work-content {
     .about-me, .work, .contact-me {
         display: flex;
         flex-direction: column;
-    }
-
-    p {
-        font-size: 12px;
         margin: 0px;
         padding: 0px;
     }
 
+    p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    header {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .hero {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .subtitle {
+        display: none;
+    }
+
+    .run-buddy {
+        margin: 10px;
+        padding: 10px;
+        height: 300px;
+        width: 300px;
+    }
+
+    .horiseon, .wip {
+        margin: 10px;
+        padding: 10px;
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    header h1 {
+        text-align: center;
+    }
+
+    .run-buddy {
+        margin: 5px;
+        padding: 5px;
+        height: 175px;
+        width: 175px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .horiseon, .wip {
+        margin: 5px;
+        padding: 5px;
+        height: 125px;
+        width: 125px;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .work-content {
+        display: none;
+    }
 }
