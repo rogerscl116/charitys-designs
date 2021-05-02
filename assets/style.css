@@ -125,7 +125,7 @@ h2 {
     background-size: cover;
     background-position: right;
     margin: 40px;
-    height: 600px;
+    height: 100px;
     width: 600px;
     border: solid thin rgb(34, 34, 34);
     border-radius: 5px;
@@ -136,7 +136,7 @@ h2 {
     background-size: cover;
     background-position: center;
     margin: 40px;
-    height: 300px;
+    height: 100px;
     width: 300px;
     border: solid thin rgb(34, 34, 34);
     border-radius: 5px;
@@ -147,26 +147,23 @@ h2 {
     background-size: cover;
     background-position: center;
     margin: 40px;
-    height: 300px;
+    height: 100px;
     width: 300px;
     border: solid thin rgb(34, 34, 34);
     border-radius: 5px;
 }
 
-h3, .work-content {
+h3 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #f8dbdb;
-    margin: 20px;
+    color: rgb(34, 34, 34);
     padding: 10px;
     border-radius: 5px;
     font-style: normal;
 }
 
-h3 {
-    background-color:rgb(34, 34, 34);
-}
-
 .work.content {
+    padding: 10px;
+    background-color:rgb(34, 34, 34);
     text-align: end;
 }
 /* media screens for 1024px, 768px, 425px, and 320px */
@@ -225,6 +222,10 @@ h3 {
         text-align: center;
     }
 
+    header h1 {
+        text-align: center;
+    }
+
     .hero {
         display: flex;
         flex-direction: column;
@@ -238,28 +239,27 @@ h3 {
     .run-buddy {
         margin: 10px;
         padding: 10px;
-        height: 300px;
+        height: 100px;
         width: 300px;
     }
 
     .horiseon, .wip {
         margin: 10px;
         padding: 10px;
-        height: 150px;
+        height: 75px;
         width: 150px;
+    }
+    .work-content {
+        display: none;
     }
 }
 
 @media screen and (max-width: 320px) {
 
-    header h1 {
-        text-align: center;
-    }
-
     .run-buddy {
         margin: 5px;
         padding: 5px;
-        height: 175px;
+        height: 87px;
         width: 175px;
         font-size: 12px;
         text-align: center;
@@ -268,7 +268,7 @@ h3 {
     .horiseon, .wip {
         margin: 5px;
         padding: 5px;
-        height: 125px;
+        height: 62px;
         width: 125px;
         font-size: 10px;
         text-align: center;
