@@ -101,6 +101,7 @@ main section h2 {
 .about-me, .work, .contact-me {
     padding: 20px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -112,7 +113,7 @@ main section p {
 .work {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .run-buddy {
@@ -122,7 +123,8 @@ main section p {
     margin: 40px;
     height: 600px;
     width: 600px;
-    border: solid rgb(34, 34, 34);
+    border: solid thin rgb(34, 34, 34);
+    border-radius: 5px;
 }
 
 .horiseon {
@@ -132,7 +134,8 @@ main section p {
     margin: 40px;
     height: 300px;
     width: 300px;
-    border: ridge rgb(34, 34, 34);
+    border: solid thin rgb(34, 34, 34);
+    border-radius: 5px;
 }
 
 .wip {
@@ -142,7 +145,8 @@ main section p {
     margin: 40px;
     height: 300px;
     width: 300px;
-    border: solid rgb(34, 34, 34);
+    border: solid thin rgb(34, 34, 34);
+    border-radius: 5px;
 }
 
 h3, .work-content {
@@ -157,14 +161,47 @@ h3, .work-content {
 }
 
 /* media screens for 1024px, 768px, and 425px */
-@media screen and (max-width: 1024) {
+@media screen and (max-width: 1024px) {
+   
+    header {
+        margin: 0px;
+        padding: 0px;
+    }
+
     .content {
-        display: flex;
-        flex-wrap: wrap;
+        margin: 20px;
+        padding: 10px;
         flex-direction: column;
+    }
+
+    p {
+        font-size: 15px;
     }
 }
 
-@media screen and (max-width: 768) {
+@media screen and (max-width: 768px) {
     
+    header {
+        margin: 0px;
+        padding: 0px;
+    }
+   
+    .content {
+        margin: 20px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-me, .work, .contact-me {
+        display: flex;
+        flex-direction: column;
+    }
+
+    p {
+        font-size: 12px;
+        margin: 0px;
+        padding: 0px;
+    }
+
 }
