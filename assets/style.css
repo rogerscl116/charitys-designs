@@ -154,17 +154,11 @@ h2 {
 }
 
 h3 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(34, 34, 34);
     padding: 10px;
     border-radius: 5px;
     font-style: normal;
-}
-
-.work.content {
-    padding: 10px;
-    background-color:rgb(34, 34, 34);
-    text-align: end;
 }
 
 /* media screens for 1024px, 768px, 425px, and 320px */
@@ -250,8 +244,8 @@ h3 {
         height: 75px;
         width: 150px;
     }
-    .work-content {
-        display: none;
+    h3 {
+        font-size: 12px;
     }
 }
 
@@ -271,15 +265,11 @@ h3 {
         padding: 5px;
         height: 62px;
         width: 125px;
-        font-size: 10px;
+        font-size: 12px;
         text-align: center;
     }
 
     p {
         text-align: center;
-    }
-
-    .work-content {
-        display: none;
     }
 }
