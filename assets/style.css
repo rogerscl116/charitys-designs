@@ -18,8 +18,6 @@ header {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    position: sticky;
-    z-index: 9999;
 }
 
 header h1 {
@@ -111,6 +109,12 @@ main section p {
     padding: 20px;
 }
 
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .run-buddy {
     background-image: url("./images/run-buddy.jpg");
     background-size: cover;
@@ -128,7 +132,7 @@ main section p {
     margin: 40px;
     height: 300px;
     width: 300px;
-    border: solid rgb(34, 34, 34);
+    border: ridge rgb(34, 34, 34);
 }
 
 .wip {
@@ -141,7 +145,7 @@ main section p {
     border: solid rgb(34, 34, 34);
 }
 
-.work-content, h3 {
+h3, .work-content {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: rgb(34, 34, 34);
     color: #f8dbdb;
@@ -149,5 +153,18 @@ main section p {
 
 .work-content {
     border-radius: 5px;
+    font-style: normal;
 }
 
+/* media screens for 1024px, 768px, and 425px */
+@media screen and (max-width: 1024) {
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768) {
+    
+}
