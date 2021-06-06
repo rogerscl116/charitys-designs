@@ -14,9 +14,9 @@ header {
     background-color:rgb(34, 34, 34);
     color: #f8dbdb;
     padding: 20px;
+    height: 100px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
 }
 
@@ -32,6 +32,7 @@ header nav {
 
 header nav ul {
     list-style-type: none;
+    
 }
 
 header nav ul li {
@@ -44,6 +45,13 @@ header nav ul li a {
     font-weight: lighter;
     text-decoration: none;
     padding: 10px 15px;
+}
+
+.sticky {
+    align-self: flex-start;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
 }
 
 /* hero styles */
@@ -61,7 +69,7 @@ header nav ul li a {
 
 .hero img {
     height: 250px;
-    width: 250px;
+    width: 210px;
     margin: 40px;
     padding: 20px;
     border-radius: 50%;
@@ -90,19 +98,17 @@ header nav ul li a {
     flex-wrap: wrap;
 }
 
-main section h2 {
+h6 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
-    margin: 20px;
-    padding: 20px;
-    align-items: flex-start;
+    margin: 10px;
+    padding: 10px;
+    border-bottom: 2px dotted #4e0404;
 }
 
 .about-me, .work, .contact-me {
+    margin: 20px;
     padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
 }
 
 main section p {
@@ -110,21 +116,17 @@ main section p {
     padding: 20px;
 }
 
-h2 {
+main h2 {
     text-decoration: none;
+    margin: 25px;
+    padding: 10px;
+    border-bottom: 4px solid #4e0404;
 }
 
-.work {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.run-buddy {
-    background-image: url("./images/run-buddy.jpg");
+.helpful-gamers {
+    background-image: url("./images/helpful-gamers.jpg");
     background-size: cover;
     background-position: right;
-    margin: 40px;
     height: 100px;
     width: 600px;
     border: solid thin rgb(34, 34, 34);
@@ -135,30 +137,43 @@ h2 {
     background-image: url("./images/horiseon.jpg");
     background-size: cover;
     background-position: center;
-    margin: 40px;
     height: 100px;
     width: 300px;
     border: solid thin rgb(34, 34, 34);
     border-radius: 5px;
 }
 
-.wip {
-    background-image: url("./images/placeholder.png");
+.run-buddy {
+    background-image: url("./images/run-buddy.jpg");
     background-size: cover;
     background-position: center;
-    margin: 40px;
     height: 100px;
     width: 300px;
     border: solid thin rgb(34, 34, 34);
     border-radius: 5px;
 }
 
-h3 {
+.code-quiz {
+    background-image: url("./images/code-quiz.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    width: 300px;
+    border: solid thin rgb(34, 34, 34);
+    border-radius: 5px;
+}
+
+h6 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: rgb(34, 34, 34);
-    padding: 10px;
-    border-radius: 5px;
-    font-style: normal;
+    font-size: medium;
+}
+
+footer {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: seashell;
+    position: fixed;
+    bottom: 0;
 }
 
 /* media screens for 1024px, 768px, 425px, and 320px */
@@ -201,6 +216,10 @@ h3 {
         padding: 0px;
     }
 
+    .subtitle {
+        display: none;
+    }
+
     p {
         font-size: 12px;
     }
@@ -208,17 +227,17 @@ h3 {
 
 @media screen and (max-width: 425px) {
 
+    nav {
+        display: none;
+    }
+
     header {
         margin: 0px;
         padding: 0px;
     }
 
     header h1 {
-        text-align: center;
-    }
-
-    header h1 {
-        text-align: center;
+        margin: auto;
     }
 
     .hero {
@@ -227,18 +246,14 @@ h3 {
         flex-wrap: wrap;
     }
 
-    .subtitle {
-        display: none;
-    }
-
-    .run-buddy {
+    .helpful-gamers {
         margin: 10px;
         padding: 10px;
         height: 100px;
         width: 300px;
     }
 
-    .horiseon, .wip {
+    .run-buddy, .horiseon, .code-quiz {
         margin: 10px;
         padding: 10px;
         height: 75px;
@@ -251,7 +266,11 @@ h3 {
 
 @media screen and (max-width: 320px) {
 
-    .run-buddy {
+    header h1 {
+        font-size: 40px;
+    }
+
+    .helpful-gamers {
         margin: 5px;
         padding: 5px;
         height: 87px;
@@ -260,7 +279,7 @@ h3 {
         text-align: center;
     }
 
-    .horiseon, .wip {
+    .run-buddy, .horiseon, .code-quiz {
         margin: 5px;
         padding: 5px;
         height: 62px;
