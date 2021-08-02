@@ -133,6 +133,16 @@ main h2 {
     border-radius: 5px;
 }
 
+.pic-a-flick {
+    background-image: url("./images/pic-a-flick.jpg");
+    background-size: cover;
+    background-position: right;
+    height: 100px;
+    width: 300px;
+    border: solid thin rgb(34, 34, 34);
+    border-radius: 5px;
+}
+
 .horiseon {
     background-image: url("./images/horiseon.jpg");
     background-size: cover;
