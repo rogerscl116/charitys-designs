@@ -31,15 +31,14 @@ header nav {
 }
 
 header nav ul {
-    list-style-type: none;
-    
+    list-style-type: none;    
 }
 
-header nav ul li {
+.nav-item {
     display: inline-block;
 }
 
-header nav ul li a {
+.nav-link {
     color: #f8dbdb;
     font-size: 20px;
     font-weight: lighter;
@@ -47,7 +46,8 @@ header nav ul li a {
     padding: 10px 15px;
 }
 
-.sticky {
+#sticky {
+    background-color:rgb(34, 34, 34);
     align-self: flex-start;
     position: -webkit-sticky;
     position: sticky;
@@ -90,10 +90,8 @@ header nav ul li a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #250202;
     background-color: #f7bcbc;
-    margin: 40px;
     padding: 20px;
     border-radius: 5px;
-    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
@@ -179,13 +177,6 @@ h6 {
     font-size: medium;
 }
 
-footer {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: seashell;
-    position: fixed;
-    bottom: 0;
-}
-
 /* media screens for 1024px, 768px, 425px, and 320px */
 @media screen and (max-width: 1024px) {
    
@@ -238,6 +229,10 @@ footer {
 @media screen and (max-width: 425px) {
 
     nav {
+        display: none;
+    }
+
+    .nav-item {
         display: none;
     }
 
